@@ -7,7 +7,7 @@ export default function Home() {
       <Header label="Home" />
 
 
-      <Modal isOpen={true} />
+      <Modal isOpen={true} title="Test" />
     </>
   );
 }
