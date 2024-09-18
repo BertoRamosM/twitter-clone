@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Sidebar from "@/components/layout/Sidebar";
+import FollowBar from "@/components/layout/FollowBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,9 +34,10 @@ export default function RootLayout({
           <div className="container h-full mx-auto xl:px-30 ma-w-6xl">
             <div className="grid grid-cols-4 h-full">
               <Sidebar />
-              <div className="col-span-3 lg:col-span-2 border-x-[1px] border-neutral+800">
+              <div className="col-span-3 lg:col-span-2 border-x-[1px] border-neutral-800">
                 {children}
               </div>
+              <FollowBar />
             </div>
           </div>
         </div>
